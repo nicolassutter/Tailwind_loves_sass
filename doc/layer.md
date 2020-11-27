@@ -2,22 +2,22 @@
 
 Allows to add different styles to tailwind's layers
 
-Any styles inside of a layer will be purged by tailwind
+**Note**: Any styles inside of a layer will be purged by tailwind
 
-<code>@parameter</code> - $name
+**`@parameter`**: `$name`
 
 ## Usage
 
-<code>@include layer($name);</code>
+```scss
+@include layer($name);
+```
 
 ## Example
 
-<pre>
-  <code>
-    @inlcude layer(utilities) {
-      .text-nicegray-950 {
-        color: gray;
-      }
-    }
-  </code>
-</pre>
+```scss
+@inlcude layer(utilities) {
+  .text-nicegray-950 {
+    color: gray;
+  }
+}
+```

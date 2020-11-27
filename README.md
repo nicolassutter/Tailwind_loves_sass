@@ -10,22 +10,44 @@ This modules allows Sass and Tailwind to be used at the same time on a single pr
 
 ## Currently existing features
 
-* [@apply](doc/apply.md) - <code>@include apply("...")</code>
-* [@layer](doc/layer.md) - <code>@include layer("...")</code>
-* [@screen](doc/respond_to.md) - <code>@include respond-to("...")</code>
-* [@screen](doc/screen.md) - <code>@include screen("...")</code>
-* [@variants](doc/variants.md) - <code>@include variants("...")</code>
-  
+### [@apply](doc/apply.md)
+
+```scss
+@include apply("...")
+```
+
+### [@layer](doc/layer.md)
+
+```scss
+@include layer("...")
+```
+
+### [@screen](doc/respond_to.md)
+
+```scss
+@include respond-to("...")
+```
+
+### [@screen](doc/screen.md)
+
+```scss
+@include screen("...")
+```
+
+### [@variants](doc/variants.md)
+
+```scss
+@include variants("...")
+```
+
 ## Installation
 
-You can download the source right from Github or run <code>npm install tailwind-loves-sass</code> in your terminal.
+You can download the source right from Github or run `npm install tailwind-loves-sass` in your terminal.
 
 Once it's done you can include the file in your project like so:
 
-<pre>
-  <code>
-    @import "tailwind-loves-css";
-  </code>
-</pre>
+```scss
+@import "tailwind-loves-css"
+```
 
 **Note:** you WILL need tailwind to be configured and ready to use in your sass workflow. Otherwise you won't be able to use this module.

@@ -2,18 +2,18 @@
 
 Facilitates the use of media queries with tailwind's breakpoints
 
-<code>@parameter</code> - $name
+**`@parameter`**: `$name`
 
 ## Usage
 
-<code>@include respond-to($name);</code>
+```scss
+@include respond-to($name);
+```
 
 ## Example
 
-<pre>
-  <code>
-    @inlcude respond-to(md) {
-      grid-template-columns: 1fr 1fr;
-    }
-  </code>
-</pre>
+```scss
+@inlcude respond-to(md) {
+  grid-template-columns: 1fr 1fr;
+}
+```

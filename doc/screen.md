@@ -1,19 +1,21 @@
 # @screen
 
-Facilitates the use of media queries with tailwind's breakpoints (copy of repsond-to, similar to tailwind's default rule)
+Facilitates the use of media queries with tailwind's breakpoints.
 
-<code>@parameter</code> - $name
+**Note**: This is a copy of repsond-to, in order to be similar to tailwind's default rule.
+
+**`@parameter`**: `$name`
 
 ## Usage
 
-<code>@include screen($name);</code>
+```scss
+@include screen($name);
+```
 
 ## Example
 
-<pre>
-  <code>
-    @inlcude screen(md) {
-      grid-template-columns: 1fr 1fr;
-    }
-  </code>
-</pre>
+```scss
+@inlcude screen(md) {
+  grid-template-columns: 1fr 1fr;
+}
+```

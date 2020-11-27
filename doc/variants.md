@@ -1,23 +1,25 @@
 # @variants
 
-Allows tailwind to create variants for your custom classes
-These should be put inside a tailwind layer like utilities or components, but it's not mandatory
-These variants are generated in the order you list them
+Allows tailwind to create variants for your custom classes.
 
-<code>@parameter</code> - $names
+These should be put inside a tailwind layer like `utilities` or `components`, but it's not mandatory.
+
+These variants are generated in the order you list them.
+
+**`@parameter`**: `$names`
 
 ## Usage
 
-<code>@include variants($names);</code>
+```scss
+@include variants($names);
+```
 
 ## Example
 
-<pre>
-  <code>
-    @inlcude variants("responsive, hover, focus") {
-      .my-class {
-        color: red;
-      }
-    }
-  </code>
-</pre>
+```scss
+@inlcude variants("responsive, hover, focus") {
+  .my-class {
+    color: red;
+  }
+}
+```
