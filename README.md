@@ -1,6 +1,6 @@
 # Tailwind Loves Sass
 
-A collections of sass tools for Tailwind development ❤️
+A collection of sass tools for Tailwind development ❤️
 
 ## Why this exists
 
