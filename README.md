@@ -4,9 +4,9 @@ A collections of sass tools for Tailwind development ❤️
 
 ## Why this exists
 
-This modules allows Sass and Tailwind to be used at the same time on a single project.
+This modules allows Sass and Tailwind to be used at the same time on a single project without the hassle.
 
-This means no linting warning/errors when trying to use a custom @rule in sass.
+**This means no linting warning/errors when trying to use a custom @rule in sass**🎉🎉.
 
 ## Currently existing features
 
