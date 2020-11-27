@@ -1,7 +1,7 @@
 {
   "name": "tailwind-loves-sass",
   "version": "1.0.4",
-  "description": "A collections of sass tools for Tailwind development",
+  "description": "A collection of sass tools for Tailwind development",
   "main": "main.scss",
   "directories": {
     "mixins": "mixins"
