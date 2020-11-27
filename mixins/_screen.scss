@@ -7,6 +7,8 @@
 
  @mixin screen($name) {
 
-  @include respond-to($name);
+  @include respond-to($name) {
+    @content
+  };
 
 }
