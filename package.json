@@ -1,0 +1,24 @@
+{
+  "name": "tailwind-loves-sass",
+  "version": "1.0.0",
+  "description": "A collections of sass tools for Tailwind development",
+  "main": "main.scss",
+  "directories": {
+    "mixins": "mixins"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolassutter/Tailwind_loves_sass.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "tailwind"
+  ],
+  "author": "Nicolas Sutter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolassutter/Tailwind_loves_sass/issues"
+  },
+  "homepage": "https://github.com/nicolassutter/Tailwind_loves_sass#readme"
+}
