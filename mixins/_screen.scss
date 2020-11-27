@@ -1,0 +1,12 @@
+/**
+ * @name - screen
+ * @parameter - $name
+ * Description - Facilitates the use of media queries with tailwind's breakpoints (copy of repsond-to, similar to tailwind's default rule)
+ * @example - @include screen(md) {...}
+ */
+
+ @mixin screen($name) {
+
+  @include respond-to($name);
+
+}

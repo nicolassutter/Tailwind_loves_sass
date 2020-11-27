@@ -1,0 +1,10 @@
+/**
+ * @name - apply
+ * @parameter - $classes
+ * Description - Allows the use of multiple classes in @apply rule
+ * @example - @include apply("bg-blue-700 hover:bg-blue-600 focus:bg-blue-600");
+ */
+
+ @mixin apply($classes) {
+  @apply #{$classes};
+}

@@ -1,0 +1,13 @@
+/**
+ * @name - layer
+ * @parameter - $name
+ * Description - Allows to add different styles to tailwind's layers
+ * Any styles inside of a layer will be purged by tailwind
+ * @example - @include layer(base) {...}
+ */
+
+ @mixin layer($name) {
+  @layer #{$name} {
+    @content;
+  } 
+}

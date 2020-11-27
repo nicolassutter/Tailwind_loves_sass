@@ -1,0 +1,14 @@
+/**
+ * @name - repond-to
+ * @parameter - $name
+ * Description - Facilitates the use of media queries with tailwind's breakpoints
+ * @example - @include respond-to(md) {...}
+ */
+
+ @mixin respond-to($name) {
+
+  @media (min-width: theme('screens.#{$name}'))  {
+    @content;
+  }
+
+}
