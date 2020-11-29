@@ -1,12 +1,12 @@
 # Tailwind Loves Sass
 
-A collection of sass tools for Tailwind development ❤️
+A collection of [Sass](https://sass-lang.com/) tools for [Tailwind](https://tailwindcss.com/) development ❤️
 
 ## Why this exists
 
 This modules allows Sass and Tailwind to be used at the same time on a single project without the hassle.
 
-**This means no linting warning/errors when trying to use a custom @rule in sass**🎉🎉.
+**This means no linting warning/errors when trying to use a custom @rule in Sass**🎉🎉.
 
 ## Currently existing features
 
@@ -42,12 +42,16 @@ This modules allows Sass and Tailwind to be used at the same time on a single pr
 
 ## Installation
 
-You can download the source right from Github or run `npm install tailwind-loves-sass` in your terminal.
+You can download the source right from GitHub or use NPM in your terminal.
 
-Once it's done you can include the file in your project like so:
-
-```scss
-@import "tailwind-loves-sass"
+```sh
+npm install tailwind-loves-sass
 ```
 
-**Note:** you WILL need tailwind to be configured and ready to use in your sass workflow. Otherwise you won't be able to use this module.
+Once it's done, you can include the file in your project like so:
+
+```scss
+@import "tailwind-loves-css"
+```
+
+**Note:** you WILL need tailwind to be configured and ready to use in your Sass workflow. Otherwise you won't be able to use this module.
