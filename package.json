@@ -1,6 +1,6 @@
 {
   "name": "tailwind-loves-sass",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A collection of sass tools for Tailwind development",
   "main": "main.scss",
   "directories": {

@@ -55,3 +55,7 @@ Once it's done, you can include the file in your project like so:
 ```
 
 **Note:** you WILL need tailwind to be configured and ready to use in your Sass workflow. Otherwise you won't be able to use this module.
+
+## Other tools
+
+* [Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=sutter-nicolas.tailwind-loves-sass-snippets)
