@@ -47,7 +47,7 @@ You can download the source right from Github or run `npm install tailwind-loves
 Once it's done you can include the file in your project like so:
 
 ```scss
-@import "tailwind-loves-css"
+@import "tailwind-loves-sass"
 ```
 
 **Note:** you WILL need tailwind to be configured and ready to use in your sass workflow. Otherwise you won't be able to use this module.
