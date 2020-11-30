@@ -67,7 +67,7 @@ You can choose to use (or not) different options. These options aim to enhance t
 This includes the default resets from the framework [Knacss](https://www.knacss.com/) by [Raphaël Goetter](https://github.com/raphaelgoetter) and [Alsacréations](https://www.alsacreations.fr/).
 
 ```scss
-@import "tailwind-loves-sass/options/knacss/main";
+@import "tailwind-loves-sass/options/knacss/_main.scss";
 ```
 
 ## Other tools
