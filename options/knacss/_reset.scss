@@ -1,0 +1,85 @@
+/* ----------------------------- */
+/*       KNACSS micro reset      */
+/* ----------------------------- */
+
+@include layer("base") {
+  /*
+  * 1. Switch to border-box model for all elements
+  * 2. Avoid min-width: auto and min-height: auto on flex and grid children
+  */
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box; /* 1 */
+    min-width: 0; /* 2 */
+    min-height: 0; /* 2 */
+  }
+  
+  /*
+  * 1. Remove the grey highlight on links in iOS 
+  * 2. Prevent orientation font changes in iOS
+  * 3. Breaks words to prevent overflow in all browsers
+  */
+  
+  html {
+    -webkit-tap-highlight-color: transparent; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    overflow-wrap: break-word; /* 3 */
+  }
+  
+  /*
+  * Embed content
+  */
+  
+  img,
+  table,
+  td,
+  blockquote,
+  pre,
+  code,
+  input,
+  textarea,
+  select,
+  video,
+  svg,
+  iframe {
+    max-width: 100%;
+  }
+  
+  iframe,
+  img,
+  input,
+  select,
+  textarea {
+    height: auto;
+  }
+  
+  img {
+    border-style: none;
+  }
+  
+  /*
+  * Remove the border on iframes in all browsers
+  */
+  
+  iframe {
+    border-style: none;
+  }
+  
+  /*
+  * Fill color matching to text color
+  */
+  
+  svg:not([fill]) {
+    fill: currentColor;
+  }
+  
+  /*
+  * Hide the overflow in IE
+  */
+  
+  svg:not(:root) {
+    overflow: hidden;
+  }
+}
