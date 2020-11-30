@@ -1,0 +1,327 @@
+/* ----------------------------- */
+/* KNACSS micro reset            */
+/* ----------------------------- */
+
+/*
+ * 1. Switch to border-box model for all elements
+ * 2. Avoid min-width: auto and min-height: auto on flex and grid children
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* 1 */
+  min-width: 0; /* 2 */
+  min-height: 0; /* 2 */
+}
+
+/*
+ * 1. Remove the grey highlight on links in iOS 
+ * 2. Prevent orientation font changes in iOS
+ * 3. Breaks words to prevent overflow in all browsers
+ */
+
+html {
+  -webkit-tap-highlight-color: transparent; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  overflow-wrap: break-word; /* 3 */
+}
+
+body {
+  margin: 0;
+}
+
+/*
+ * Vertical rythm
+ */
+
+h1,
+.h1-like,
+h2,
+.h2-like {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+p,
+address,
+ol,
+ul,
+dl,
+blockquote,
+pre,
+h3,
+.h3-like,
+h4,
+.h4-like,
+h5,
+.h5-like,
+h6,
+.h6-like,
+dt,
+dd {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/*
+ * Nested elements
+ */
+
+ol ol,
+ol ul,
+ul ol,
+ul ul,
+li ul,
+li ol,
+nav ul,
+nav ol,
+li p,
+li .p-like {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  padding: 0;
+}
+
+/*
+ * Embed content
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+img,
+table,
+td,
+blockquote,
+pre,
+code,
+input,
+textarea,
+select,
+video,
+svg,
+iframe {
+  max-width: 100%;
+}
+
+iframe,
+img,
+input,
+select,
+textarea {
+  height: auto;
+}
+
+img {
+  border-style: none;
+}
+
+/**
+ * Remove the border on iframes in all browsers
+ */
+
+iframe {
+  border-style: none;
+}
+
+/*
+ * Fill color matching to text color
+ */
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+/*
+ * Hide the overflow in IE
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*
+ * Tables
+ */
+
+table {
+  border-collapse: collapse;
+}
+
+/* ----------------------------- */
+/* Accessibility reset           */
+/* ----------------------------- */
+
+/* 
+ * Hidden but not for an assistive technology like a screen reader, Yahoo! method 
+ */
+
+.visually-hidden {
+  position: absolute !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+
+/*
+ * Disable animations styles when reduced motion is enabled
+ */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/*
+ * Change the cursor on busy elements in all browsers.
+ */
+
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+/*
+ * Change the cursor on control elements in all browsers.
+ */
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+/*
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements in all browsers.
+ */
+
+[aria-disabled="true"],
+[disabled] {
+  cursor: not-allowed;
+}
+
+/*
+ * Change the display on visually hidden accessible elements
+ * in all browsers.
+ */
+
+[aria-hidden="false"][hidden] {
+  display: initial;
+}
+
+[aria-hidden="false"][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+/* ----------------------------- */
+/* Print reset                   */
+/* ----------------------------- */
+
+@media print {
+  * {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    width: auto;
+    margin: auto;
+    font-family: serif;
+    font-size: 12pt;
+  }
+
+  p,
+  .p-like,
+  h1,
+  .h1-like,
+  h2,
+  .h2-like,
+  h3,
+  .h3-like,
+  h4,
+  .h4-like,
+  h5,
+  .h5-like,
+  h6,
+  .h6-like,
+  blockquote,
+  label,
+  ul,
+  ol {
+    color: #000;
+    margin: auto;
+  }
+
+  .print {
+    display: block;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  /* no orphans, no widows */
+  p,
+  .p-like,
+  blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* no breaks inside these elements */
+  blockquote,
+  ul,
+  ol {
+    page-break-inside: avoid;
+  }
+
+  /* page break before main headers
+  h1,
+  .h1-like {
+    page-break-before: always;
+  }
+  */
+
+  /* no breaks after these elements */
+  h1,
+  .h1-like,
+  h2,
+  .h2-like,
+  h3,
+  .h3-like,
+  caption {
+    page-break-after: avoid;
+  }
+
+  a {
+    color: #000;
+  }
+
+  /* displaying URLs
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  */
+
+  a[href^="javascript:"]::after,
+  a[href^="#"]::after {
+    content: "";
+  }
+}
