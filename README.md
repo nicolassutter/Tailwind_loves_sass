@@ -51,10 +51,24 @@ npm install tailwind-loves-sass
 Once it's done, you can include the file in your project like so:
 
 ```scss
-@import "tailwind-loves-sass"
+@import "tailwind-loves-sass";
 ```
 
 **Note:** you WILL need tailwind to be configured and ready to use in your Sass workflow. Otherwise you won't be able to use this module.
+
+### Options
+
+You can choose to use (or not) different options. These options aim to enhance the `base`, `components` and `utilities` layers of `Tailwind`.
+
+#### Currently existing options
+
+##### [Knaccs](https://www.knacss.com/)
+
+This includes the default resets from the framework [Knacss](https://www.knacss.com/) by @raphaelgoetter and [Alsacréations](https://www.alsacreations.fr/).
+
+```scss
+@import "tailwind-loves-sass/options/knacss/main";
+```
 
 ## Other tools
 
