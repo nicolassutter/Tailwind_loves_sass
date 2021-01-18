@@ -68,8 +68,3 @@ This includes the default resets from the framework [Knacss](https://www.knacss.
 
 ```scss
 @import "tailwind-loves-sass/options/knacss/_main.scss";
-```
-
-## Other tools
-
-* [Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=sutter-nicolas.tailwind-loves-sass-snippets)
