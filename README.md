@@ -1,5 +1,9 @@
 # Tailwind Loves Sass
 
+> Before using this package, you should always consider disabling your editor's native linting for custom css @rules. 
+
+> If for some reason, this is not possible for you, then feel free to use this package.
+
 A collection of [Sass](https://sass-lang.com/) tools for [Tailwind](https://tailwindcss.com/) development ❤️
 
 ## Why this exists
